@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!--
+	  ONLY use this file after Apple has granted both entitlements to your
+	  Developer account via https://developer.apple.com/contact/carplay/
+	  Signing will fail if the capabilities are not on your App ID / profile.
+	  Cafari Lite (MIT) documented that BOTH keys are typically required for
+	  the car UIWindowScene to appear on the head unit.
+	-->
+	<key>com.apple.developer.carplay-audio</key>
+	<true/>
+	<key>com.apple.developer.carplay-video</key>
+	<true/>
+</dict>
+</plist>

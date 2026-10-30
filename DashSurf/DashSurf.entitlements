@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!--
+	  Default signing entitlements intentionally omit CarPlay keys.
+	  Without Apple-granted CarPlay capabilities the app builds and runs
+	  as a full iPhone browser. To enable the car window after Apple grants
+	  entitlements, point CODE_SIGN_ENTITLEMENTS at CarPlay.entitlements
+	  (see Local.xcconfig.example and CARPLAY_COMPATIBILITY.md).
+	-->
+</dict>
+</plist>

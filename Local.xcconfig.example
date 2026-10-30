@@ -1,0 +1,9 @@
+// Copy to Local.xcconfig (git-ignored) and fill in your values.
+// Then set DEVELOPMENT_TEAM / PRODUCT_BUNDLE_IDENTIFIER in Xcode
+// or include this file from Signing.xcconfig.
+
+DASHSURF_BUNDLE_ID = com.example.dashsurf
+DASHSURF_TEAM =
+// Leave empty for phone-only builds. After Apple grants CarPlay capabilities:
+// DASHSURF_ENTITLEMENTS = DashSurf/CarPlay.entitlements
+DASHSURF_ENTITLEMENTS = DashSurf/DashSurf.entitlements
