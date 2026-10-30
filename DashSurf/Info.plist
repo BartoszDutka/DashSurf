@@ -24,6 +24,34 @@
 	<true/>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>DashSurf can use approximate location speed only to pause car-screen video while driving. Nothing is stored or sent anywhere.</string>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<true/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>Phone</string>
+				</dict>
+			</array>
+			<key>UIWindowSceneSessionRoleCarPlay</key>
+			<array>
+				<dict>
+					<key>UISceneClassName</key>
+					<string>UIWindowScene</string>
+					<key>UISceneConfigurationName</key>
+					<string>CarPlay</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).CarPlaySceneDelegate</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	<key>UIApplicationSupportsMultipleScenes</key>
+	<true/>
 	<key>UILaunchScreen</key>
 	<dict>
 		<key>UIColorName</key>
@@ -46,39 +74,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>UIApplicationSupportsMultipleScenes</key>
-	<true/>
-	<key>UIApplicationSceneManifest</key>
-	<dict>
-		<key>UIApplicationSupportsMultipleScenes</key>
-		<true/>
-		<key>UISceneConfigurations</key>
-		<dict>
-			<!-- Phone UI is provided by SwiftUI WindowGroup. -->
-			<key>UIWindowSceneSessionRoleApplication</key>
-			<array>
-				<dict>
-					<key>UISceneConfigurationName</key>
-					<string>Phone</string>
-				</dict>
-			</array>
-			<!--
-			  CarPlay window scene. iOS creates this only when the signed binary
-			  includes Apple-granted CarPlay entitlements.
-			  See CARPLAY_COMPATIBILITY.md.
-			-->
-			<key>UIWindowSceneSessionRoleCarPlay</key>
-			<array>
-				<dict>
-					<key>UISceneConfigurationName</key>
-					<string>CarPlay</string>
-					<key>UISceneClassName</key>
-					<string>UIWindowScene</string>
-					<key>UISceneDelegateClassName</key>
-					<string>$(PRODUCT_MODULE_NAME).CarPlaySceneDelegate</string>
-				</dict>
-			</array>
-		</dict>
-	</dict>
 </dict>
 </plist>

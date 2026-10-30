@@ -11,12 +11,12 @@ final class QuickAccessRepository {
 
     func all() throws -> [QuickAccessItem] {
         let descriptor = FetchDescriptor<QuickAccessItem>(
-            sortBy: [
-                SortDescriptor(\.isPinned, order: .reverse),
-                SortDescriptor(\.sortOrder)
-            ]
+            sortBy: [SortDescriptor(\QuickAccessItem.sortOrder)]
         )
-        return try modelContext.fetch(descriptor)
+        return try modelContext.fetch(descriptor).sorted {
+            if $0.isPinned != $1.isPinned { return $0.isPinned && !$1.isPinned }
+            return $0.sortOrder < $1.sortOrder
+        }
     }
 
     func seedDefaultsIfNeeded() {

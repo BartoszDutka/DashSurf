@@ -1,133 +1,144 @@
 // !$*UTF8*$!
 {
 	archiveVersion = 1;
-	classes = {};
-	objectVersion = 56;
+	classes = {
+	};
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		88150795E7AB0A136D4FD7DB /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3092CFC56DFE830E2321EED /* AppCoordinator.swift */; };
-		9CC321E992755B154D31535B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39B2B47975F0173ED6A5BFB /* AppDelegate.swift */; };
-		B36B148E8ACFEDFA26231F64 /* DashSurfApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2747ED38E602433131F5632 /* DashSurfApp.swift */; };
-		EC1B3E87ABC1CAD30A48A96A /* PhoneSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5043B8D3DEB43E98EE95E0 /* PhoneSceneDelegate.swift */; };
-		DB59B12643A81814B336EBD9 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37132F88E94CE13F16CB0CAD /* RootTabView.swift */; };
-		C126087236E2329A738693D2 /* BrowserChrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6991F0980BE82CF80CEA6B8D /* BrowserChrome.swift */; };
-		A3A14C863E4409E4B24F4C55 /* BrowserSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACE99860399F0FA7781500F /* BrowserSessionManager.swift */; };
-		1D566DE4B90786C7CD393156 /* BrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4CEC207445B3211AD3DF78 /* BrowserView.swift */; };
-		7556F5B1443C562A99D8A071 /* BrowserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F634418690114D4BD1C93DF /* BrowserViewModel.swift */; };
-		87B3E9F37380D7CBDEFE191D /* TabManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EE3D97109959CADE0D87BB /* TabManager.swift */; };
-		662C423F8BB512E6CEFEB140 /* WebViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C968D747401188334A9E4265 /* WebViewFactory.swift */; };
-		6D355D87155C0754F1E2BAC6 /* WebViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4744C2590E5EC1A859DF799E /* WebViewRepresentable.swift */; };
-		43AE2C0517D85B172D6C3C24 /* CarMotionGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB0D2349F01A8E065A8C530 /* CarMotionGate.swift */; };
-		9F8177BBDD85687F904BD840 /* CarPlayAvailabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E253642EAB9A39DA7983717 /* CarPlayAvailabilityService.swift */; };
+		0923D8D20A74937E14AB04B2 /* QuickAccessRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDAF9F9BD2821F880ECA999 /* QuickAccessRepository.swift */; };
 		11CFC6D6E3B5ADCC5455CB2B /* CarPlayBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEB335E4365C30FF7B8A145 /* CarPlayBrowserViewController.swift */; };
-		9EFFFA2011ED48D09117C6B7 /* CarPlayCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D638A6B9E10C69ACD7A699E /* CarPlayCoordinator.swift */; };
-		4E4C6DE45144782E44E3DDDE /* CarPlaySceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0788E3A6ECB2D96B2F71CEBB /* CarPlaySceneDelegate.swift */; };
-		BFB52DE04BB773CCE3FF3325 /* CarPlaySceneRole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6338E16BF652ABCAF8F08F4E /* CarPlaySceneRole.swift */; };
-		D678C187F738B3974630F4CB /* CarPlaySessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71B2F0F1BD64C2C45E5C2B4 /* CarPlaySessionManager.swift */; };
-		65FD4342AC1C072701479A57 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65E316178B5E92D67BF5088 /* AppConstants.swift */; };
-		DC68A827DFA5C0B566FB5832 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA44F740C1F57A63B5FD494 /* AppDependencies.swift */; };
-		9374BC2ADEED7FE1AF6DB927 /* URL+DashSurf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8366138227E94FC7450F2DEB /* URL+DashSurf.swift */; };
-		E48CDA563D4D4A5D42E5C231 /* DateGrouping.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B845FDBA9CAB276B6EA22C /* DateGrouping.swift */; };
-		6D395B1FB5D4037E3A6BB960 /* BookmarksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D55A28221684AF939F6223 /* BookmarksView.swift */; };
-		ED6977B3CC5A3A948422DAC5 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8225F26C541B875D1C9BFF3E /* HistoryView.swift */; };
-		D6621F7B12DB763A8E13A6C9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6465263114726CF3C818B128 /* HomeView.swift */; };
-		CF4D8141A9BFF69E1729685D /* QuickAccessEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D8ABEDC66288FB18D21DFB /* QuickAccessEditorView.swift */; };
-		C40E11168EE5C89EC041E1E0 /* RecentMediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB1958D53E180E8E03FFCF9 /* RecentMediaView.swift */; };
-		D27D32ACADAE53985284986A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8207307E8B3200CC2DDA52F0 /* SettingsView.swift */; };
-		A162142F980ADD68F5354829 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41950E99606F4EC4F81C30C /* AppSettings.swift */; };
+		1D566DE4B90786C7CD393156 /* BrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4CEC207445B3211AD3DF78 /* BrowserView.swift */; };
+		2124A437D638D85294659BC2 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405C66D9A9AAB8E8F31C3BDA /* PersistenceController.swift */; };
+		25A856DE9B58D86E134D6597 /* RecentMediaRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D5DC51203F49CAC0E8E75B /* RecentMediaRepositoryTests.swift */; };
 		2DE8076400FADC67145CAFCB /* Bookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C1681A4C0BAA6FE31A98F6 /* Bookmark.swift */; };
 		3A160041B3E4D0E58917657D /* BrowserHistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C296D6490B3FF1263207AE /* BrowserHistoryItem.swift */; };
-		B31063D4C2D5E774A39F0284 /* BrowserTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB09F1BF4E059EE46ADDDAF /* BrowserTab.swift */; };
-		7C8D545E46DF010900687293 /* QuickAccessItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86DC829A81AF686C0BA6C34 /* QuickAccessItem.swift */; };
-		814BFA1AE2914B4EAFD696F1 /* RecentMediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BCB0121C76B568BDD7D495 /* RecentMediaItem.swift */; };
-		E4DB74749FB06CB0D41EADB4 /* BookmarkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FB3F7D2D341AE591D5576 /* BookmarkRepository.swift */; };
-		C12F70BA0609701FA38F23A5 /* HistoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BB727537109951C6D1AAC4 /* HistoryRepository.swift */; };
-		2124A437D638D85294659BC2 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405C66D9A9AAB8E8F31C3BDA /* PersistenceController.swift */; };
-		0923D8D20A74937E14AB04B2 /* QuickAccessRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDAF9F9BD2821F880ECA999 /* QuickAccessRepository.swift */; };
+		3CAAC2118F596A17E8BD241B /* SettingsStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A327D9E20E4DEB452BB632A /* SettingsStoreTests.swift */; };
+		43AE2C0517D85B172D6C3C24 /* CarMotionGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB0D2349F01A8E065A8C530 /* CarMotionGate.swift */; };
+		4611DC1BB9DAE9CCC0CABCE7 /* DashSurfTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1D830312EED198DF2A8B99 /* DashSurfTheme.swift */; };
 		4A988C0B6CADD8B1AEFEE008 /* RecentMediaRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0338ACBE6677E0F8111A98A9 /* RecentMediaRepository.swift */; };
-		8073681CDEB3769FA7BC1811 /* TabStateRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CA1D21C3FAEAB771D22743 /* TabStateRepository.swift */; };
 		4CF4049BF9A04B299683105A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0E24501C1F68BB214B16049 /* Assets.xcassets */; };
-		8F6EA23DA63F1E2E2C7C6A70 /* AudioSessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AE4EF8D6185E1D2351C449 /* AudioSessionService.swift */; };
+		4E4C6DE45144782E44E3DDDE /* CarPlaySceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0788E3A6ECB2D96B2F71CEBB /* CarPlaySceneDelegate.swift */; };
 		50259C1E80AF3DBCD389002B /* FaviconService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515F64E6A014B4EAE8A0749C /* FaviconService.swift */; };
 		5732E5BE70495F23C954A042 /* MediaDetectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E95567125B48B8550AC913 /* MediaDetectionService.swift */; };
-		DF9C93783AFD876A6EA38749 /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C55A18C4C3BC2FC33E45313 /* SearchService.swift */; };
 		5AF8CC7C6A426D7AA2AC04CB /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77E73A977D4D20DAE627D51 /* SettingsStore.swift */; };
+		65FD4342AC1C072701479A57 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65E316178B5E92D67BF5088 /* AppConstants.swift */; };
+		662C423F8BB512E6CEFEB140 /* WebViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C968D747401188334A9E4265 /* WebViewFactory.swift */; };
+		6D355D87155C0754F1E2BAC6 /* WebViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4744C2590E5EC1A859DF799E /* WebViewRepresentable.swift */; };
+		6D395B1FB5D4037E3A6BB960 /* BookmarksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D55A28221684AF939F6223 /* BookmarksView.swift */; };
+		7556F5B1443C562A99D8A071 /* BrowserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F634418690114D4BD1C93DF /* BrowserViewModel.swift */; };
+		7C8D545E46DF010900687293 /* QuickAccessItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86DC829A81AF686C0BA6C34 /* QuickAccessItem.swift */; };
+		8073681CDEB3769FA7BC1811 /* TabStateRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CA1D21C3FAEAB771D22743 /* TabStateRepository.swift */; };
+		814BFA1AE2914B4EAFD696F1 /* RecentMediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BCB0121C76B568BDD7D495 /* RecentMediaItem.swift */; };
 		843058DC9927DAE779821F29 /* URLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1C7387562F220D4886847F /* URLService.swift */; };
-		BD987F3A710AB959F3DE5BD5 /* WebsiteDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA67F70040C56D172C9915C /* WebsiteDataService.swift */; };
-		4611DC1BB9DAE9CCC0CABCE7 /* DashSurfTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1D830312EED198DF2A8B99 /* DashSurfTheme.swift */; };
-		F4078C453164579A83816F4A /* BookmarkRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE3F5A5039B01081C40AD01 /* BookmarkRepositoryTests.swift */; };
-		B11B4139EDBF615916C287E4 /* HistoryRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9AFDE4E83C6192A4B1DE2A /* HistoryRepositoryTests.swift */; };
-		DDBDB59CDBC54D53F6D23366 /* MediaDetectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E691776A8265078E70E41897 /* MediaDetectionTests.swift */; };
-		25A856DE9B58D86E134D6597 /* RecentMediaRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D5DC51203F49CAC0E8E75B /* RecentMediaRepositoryTests.swift */; };
-		3CAAC2118F596A17E8BD241B /* SettingsStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A327D9E20E4DEB452BB632A /* SettingsStoreTests.swift */; };
+		87B3E9F37380D7CBDEFE191D /* TabManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EE3D97109959CADE0D87BB /* TabManager.swift */; };
+		88150795E7AB0A136D4FD7DB /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3092CFC56DFE830E2321EED /* AppCoordinator.swift */; };
 		88ABED1AAD100DBD7471D000 /* TabManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E61D93E2283F9E425BE6A38 /* TabManagerTests.swift */; };
+		8F6EA23DA63F1E2E2C7C6A70 /* AudioSessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AE4EF8D6185E1D2351C449 /* AudioSessionService.swift */; };
+		9374BC2ADEED7FE1AF6DB927 /* URL+DashSurf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8366138227E94FC7450F2DEB /* URL+DashSurf.swift */; };
+		9CC321E992755B154D31535B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39B2B47975F0173ED6A5BFB /* AppDelegate.swift */; };
+		9EFFFA2011ED48D09117C6B7 /* CarPlayCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D638A6B9E10C69ACD7A699E /* CarPlayCoordinator.swift */; };
+		9F8177BBDD85687F904BD840 /* CarPlayAvailabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E253642EAB9A39DA7983717 /* CarPlayAvailabilityService.swift */; };
+		A162142F980ADD68F5354829 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41950E99606F4EC4F81C30C /* AppSettings.swift */; };
+		A3A14C863E4409E4B24F4C55 /* BrowserSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACE99860399F0FA7781500F /* BrowserSessionManager.swift */; };
+		B11B4139EDBF615916C287E4 /* HistoryRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9AFDE4E83C6192A4B1DE2A /* HistoryRepositoryTests.swift */; };
+		B31063D4C2D5E774A39F0284 /* BrowserTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB09F1BF4E059EE46ADDDAF /* BrowserTab.swift */; };
+		B36B148E8ACFEDFA26231F64 /* DashSurfApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2747ED38E602433131F5632 /* DashSurfApp.swift */; };
+		BD987F3A710AB959F3DE5BD5 /* WebsiteDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA67F70040C56D172C9915C /* WebsiteDataService.swift */; };
+		BFB52DE04BB773CCE3FF3325 /* CarPlaySceneRole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6338E16BF652ABCAF8F08F4E /* CarPlaySceneRole.swift */; };
+		C126087236E2329A738693D2 /* BrowserChrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6991F0980BE82CF80CEA6B8D /* BrowserChrome.swift */; };
+		C12F70BA0609701FA38F23A5 /* HistoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BB727537109951C6D1AAC4 /* HistoryRepository.swift */; };
+		C40E11168EE5C89EC041E1E0 /* RecentMediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB1958D53E180E8E03FFCF9 /* RecentMediaView.swift */; };
+		CF4D8141A9BFF69E1729685D /* QuickAccessEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D8ABEDC66288FB18D21DFB /* QuickAccessEditorView.swift */; };
+		D27D32ACADAE53985284986A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8207307E8B3200CC2DDA52F0 /* SettingsView.swift */; };
+		D6621F7B12DB763A8E13A6C9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6465263114726CF3C818B128 /* HomeView.swift */; };
+		D678C187F738B3974630F4CB /* CarPlaySessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71B2F0F1BD64C2C45E5C2B4 /* CarPlaySessionManager.swift */; };
+		DB59B12643A81814B336EBD9 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37132F88E94CE13F16CB0CAD /* RootTabView.swift */; };
+		DC68A827DFA5C0B566FB5832 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA44F740C1F57A63B5FD494 /* AppDependencies.swift */; };
+		DDBDB59CDBC54D53F6D23366 /* MediaDetectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E691776A8265078E70E41897 /* MediaDetectionTests.swift */; };
 		DEE074AC23927FC65B7022E3 /* URLServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7BA7652EE42A7AF9CDF6D5 /* URLServiceTests.swift */; };
+		DF9C93783AFD876A6EA38749 /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C55A18C4C3BC2FC33E45313 /* SearchService.swift */; };
+		E48CDA563D4D4A5D42E5C231 /* DateGrouping.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B845FDBA9CAB276B6EA22C /* DateGrouping.swift */; };
+		E4DB74749FB06CB0D41EADB4 /* BookmarkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FB3F7D2D341AE591D5576 /* BookmarkRepository.swift */; };
+		EC1B3E87ABC1CAD30A48A96A /* PhoneSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5043B8D3DEB43E98EE95E0 /* PhoneSceneDelegate.swift */; };
+		ED6977B3CC5A3A948422DAC5 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8225F26C541B875D1C9BFF3E /* HistoryView.swift */; };
+		F4078C453164579A83816F4A /* BookmarkRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE3F5A5039B01081C40AD01 /* BookmarkRepositoryTests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		193D0A8035DE97CF1A3652FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3435DDA2687639586BF0B70;
+			remoteInfo = DashSurf;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		84337AD8D27FCD69AF2C4FC2 /* DashSurf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DashSurf.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DFDED23FA58339F9273F6C84 /* DashSurfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DashSurfTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A3092CFC56DFE830E2321EED /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		E39B2B47975F0173ED6A5BFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E2747ED38E602433131F5632 /* DashSurfApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashSurfApp.swift; sourceTree = "<group>"; };
-		4E5043B8D3DEB43E98EE95E0 /* PhoneSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneSceneDelegate.swift; sourceTree = "<group>"; };
-		37132F88E94CE13F16CB0CAD /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
-		6991F0980BE82CF80CEA6B8D /* BrowserChrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserChrome.swift; sourceTree = "<group>"; };
-		1ACE99860399F0FA7781500F /* BrowserSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserSessionManager.swift; sourceTree = "<group>"; };
-		1D4CEC207445B3211AD3DF78 /* BrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserView.swift; sourceTree = "<group>"; };
-		3F634418690114D4BD1C93DF /* BrowserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewModel.swift; sourceTree = "<group>"; };
-		02EE3D97109959CADE0D87BB /* TabManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabManager.swift; sourceTree = "<group>"; };
-		C968D747401188334A9E4265 /* WebViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewFactory.swift; sourceTree = "<group>"; };
-		4744C2590E5EC1A859DF799E /* WebViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewRepresentable.swift; sourceTree = "<group>"; };
-		1EB0D2349F01A8E065A8C530 /* CarMotionGate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarMotionGate.swift; sourceTree = "<group>"; };
-		4E253642EAB9A39DA7983717 /* CarPlayAvailabilityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlayAvailabilityService.swift; sourceTree = "<group>"; };
-		8DEB335E4365C30FF7B8A145 /* CarPlayBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlayBrowserViewController.swift; sourceTree = "<group>"; };
-		2D638A6B9E10C69ACD7A699E /* CarPlayCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlayCoordinator.swift; sourceTree = "<group>"; };
-		0788E3A6ECB2D96B2F71CEBB /* CarPlaySceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlaySceneDelegate.swift; sourceTree = "<group>"; };
-		6338E16BF652ABCAF8F08F4E /* CarPlaySceneRole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlaySceneRole.swift; sourceTree = "<group>"; };
-		E71B2F0F1BD64C2C45E5C2B4 /* CarPlaySessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlaySessionManager.swift; sourceTree = "<group>"; };
-		E3242BB1BB32AA7B73AE1B73 /* CarPlay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CarPlay.entitlements; sourceTree = "<group>"; };
-		A65E316178B5E92D67BF5088 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
-		DCA44F740C1F57A63B5FD494 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
-		8366138227E94FC7450F2DEB /* URL+DashSurf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+DashSurf.swift"; sourceTree = "<group>"; };
-		D6B845FDBA9CAB276B6EA22C /* DateGrouping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateGrouping.swift; sourceTree = "<group>"; };
-		9E12E56F4E0DF0437D329C59 /* DashSurf.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DashSurf.entitlements; sourceTree = "<group>"; };
-		02D55A28221684AF939F6223 /* BookmarksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksView.swift; sourceTree = "<group>"; };
-		8225F26C541B875D1C9BFF3E /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
-		6465263114726CF3C818B128 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		11D8ABEDC66288FB18D21DFB /* QuickAccessEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickAccessEditorView.swift; sourceTree = "<group>"; };
-		5FB1958D53E180E8E03FFCF9 /* RecentMediaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentMediaView.swift; sourceTree = "<group>"; };
-		8207307E8B3200CC2DDA52F0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		FFAFACFCA16D0E4883CE31B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B41950E99606F4EC4F81C30C /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
-		C4C1681A4C0BAA6FE31A98F6 /* Bookmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookmark.swift; sourceTree = "<group>"; };
-		90C296D6490B3FF1263207AE /* BrowserHistoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserHistoryItem.swift; sourceTree = "<group>"; };
-		6FB09F1BF4E059EE46ADDDAF /* BrowserTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserTab.swift; sourceTree = "<group>"; };
-		C86DC829A81AF686C0BA6C34 /* QuickAccessItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickAccessItem.swift; sourceTree = "<group>"; };
-		B5BCB0121C76B568BDD7D495 /* RecentMediaItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentMediaItem.swift; sourceTree = "<group>"; };
-		F26FB3F7D2D341AE591D5576 /* BookmarkRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkRepository.swift; sourceTree = "<group>"; };
-		88BB727537109951C6D1AAC4 /* HistoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRepository.swift; sourceTree = "<group>"; };
-		405C66D9A9AAB8E8F31C3BDA /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
-		6DDAF9F9BD2821F880ECA999 /* QuickAccessRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickAccessRepository.swift; sourceTree = "<group>"; };
-		0338ACBE6677E0F8111A98A9 /* RecentMediaRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentMediaRepository.swift; sourceTree = "<group>"; };
-		31CA1D21C3FAEAB771D22743 /* TabStateRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabStateRepository.swift; sourceTree = "<group>"; };
-		C0E24501C1F68BB214B16049 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		75AE4EF8D6185E1D2351C449 /* AudioSessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSessionService.swift; sourceTree = "<group>"; };
-		515F64E6A014B4EAE8A0749C /* FaviconService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaviconService.swift; sourceTree = "<group>"; };
 		00E95567125B48B8550AC913 /* MediaDetectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaDetectionService.swift; sourceTree = "<group>"; };
-		7C55A18C4C3BC2FC33E45313 /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
-		B77E73A977D4D20DAE627D51 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
+		02D55A28221684AF939F6223 /* BookmarksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksView.swift; sourceTree = "<group>"; };
+		02EE3D97109959CADE0D87BB /* TabManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabManager.swift; sourceTree = "<group>"; };
+		0338ACBE6677E0F8111A98A9 /* RecentMediaRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentMediaRepository.swift; sourceTree = "<group>"; };
+		0788E3A6ECB2D96B2F71CEBB /* CarPlaySceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlaySceneDelegate.swift; sourceTree = "<group>"; };
 		0D1C7387562F220D4886847F /* URLService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLService.swift; sourceTree = "<group>"; };
 		0DA67F70040C56D172C9915C /* WebsiteDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteDataService.swift; sourceTree = "<group>"; };
-		9B1D830312EED198DF2A8B99 /* DashSurfTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashSurfTheme.swift; sourceTree = "<group>"; };
-		4CE3F5A5039B01081C40AD01 /* BookmarkRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkRepositoryTests.swift; sourceTree = "<group>"; };
 		0E9AFDE4E83C6192A4B1DE2A /* HistoryRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRepositoryTests.swift; sourceTree = "<group>"; };
-		E691776A8265078E70E41897 /* MediaDetectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaDetectionTests.swift; sourceTree = "<group>"; };
+		11D8ABEDC66288FB18D21DFB /* QuickAccessEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickAccessEditorView.swift; sourceTree = "<group>"; };
+		1ACE99860399F0FA7781500F /* BrowserSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserSessionManager.swift; sourceTree = "<group>"; };
+		1D4CEC207445B3211AD3DF78 /* BrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserView.swift; sourceTree = "<group>"; };
+		1EB0D2349F01A8E065A8C530 /* CarMotionGate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarMotionGate.swift; sourceTree = "<group>"; };
 		25D5DC51203F49CAC0E8E75B /* RecentMediaRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentMediaRepositoryTests.swift; sourceTree = "<group>"; };
-		5A327D9E20E4DEB452BB632A /* SettingsStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStoreTests.swift; sourceTree = "<group>"; };
-		4E61D93E2283F9E425BE6A38 /* TabManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabManagerTests.swift; sourceTree = "<group>"; };
+		2D638A6B9E10C69ACD7A699E /* CarPlayCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlayCoordinator.swift; sourceTree = "<group>"; };
+		31CA1D21C3FAEAB771D22743 /* TabStateRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabStateRepository.swift; sourceTree = "<group>"; };
+		37132F88E94CE13F16CB0CAD /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
 		3B7BA7652EE42A7AF9CDF6D5 /* URLServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLServiceTests.swift; sourceTree = "<group>"; };
+		3F634418690114D4BD1C93DF /* BrowserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewModel.swift; sourceTree = "<group>"; };
+		405C66D9A9AAB8E8F31C3BDA /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		4744C2590E5EC1A859DF799E /* WebViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewRepresentable.swift; sourceTree = "<group>"; };
+		4CE3F5A5039B01081C40AD01 /* BookmarkRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkRepositoryTests.swift; sourceTree = "<group>"; };
+		4E253642EAB9A39DA7983717 /* CarPlayAvailabilityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlayAvailabilityService.swift; sourceTree = "<group>"; };
+		4E5043B8D3DEB43E98EE95E0 /* PhoneSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneSceneDelegate.swift; sourceTree = "<group>"; };
+		4E61D93E2283F9E425BE6A38 /* TabManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabManagerTests.swift; sourceTree = "<group>"; };
+		515F64E6A014B4EAE8A0749C /* FaviconService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaviconService.swift; sourceTree = "<group>"; };
+		5A327D9E20E4DEB452BB632A /* SettingsStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStoreTests.swift; sourceTree = "<group>"; };
+		5FB1958D53E180E8E03FFCF9 /* RecentMediaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentMediaView.swift; sourceTree = "<group>"; };
+		6338E16BF652ABCAF8F08F4E /* CarPlaySceneRole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlaySceneRole.swift; sourceTree = "<group>"; };
+		6465263114726CF3C818B128 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		6991F0980BE82CF80CEA6B8D /* BrowserChrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserChrome.swift; sourceTree = "<group>"; };
+		6DDAF9F9BD2821F880ECA999 /* QuickAccessRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickAccessRepository.swift; sourceTree = "<group>"; };
+		6FB09F1BF4E059EE46ADDDAF /* BrowserTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserTab.swift; sourceTree = "<group>"; };
+		75AE4EF8D6185E1D2351C449 /* AudioSessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSessionService.swift; sourceTree = "<group>"; };
+		7C55A18C4C3BC2FC33E45313 /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
+		8207307E8B3200CC2DDA52F0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		8225F26C541B875D1C9BFF3E /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		8366138227E94FC7450F2DEB /* URL+DashSurf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+DashSurf.swift"; sourceTree = "<group>"; };
+		84337AD8D27FCD69AF2C4FC2 /* DashSurf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DashSurf.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88BB727537109951C6D1AAC4 /* HistoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRepository.swift; sourceTree = "<group>"; };
+		8DEB335E4365C30FF7B8A145 /* CarPlayBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlayBrowserViewController.swift; sourceTree = "<group>"; };
+		90C296D6490B3FF1263207AE /* BrowserHistoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserHistoryItem.swift; sourceTree = "<group>"; };
+		9B1D830312EED198DF2A8B99 /* DashSurfTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashSurfTheme.swift; sourceTree = "<group>"; };
+		9E12E56F4E0DF0437D329C59 /* DashSurf.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DashSurf.entitlements; sourceTree = "<group>"; };
+		A3092CFC56DFE830E2321EED /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		A65E316178B5E92D67BF5088 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		B41950E99606F4EC4F81C30C /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		B5BCB0121C76B568BDD7D495 /* RecentMediaItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentMediaItem.swift; sourceTree = "<group>"; };
+		B77E73A977D4D20DAE627D51 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
+		C0E24501C1F68BB214B16049 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4C1681A4C0BAA6FE31A98F6 /* Bookmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookmark.swift; sourceTree = "<group>"; };
+		C86DC829A81AF686C0BA6C34 /* QuickAccessItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickAccessItem.swift; sourceTree = "<group>"; };
+		C968D747401188334A9E4265 /* WebViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewFactory.swift; sourceTree = "<group>"; };
+		D6B845FDBA9CAB276B6EA22C /* DateGrouping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateGrouping.swift; sourceTree = "<group>"; };
+		DCA44F740C1F57A63B5FD494 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
+		DFDED23FA58339F9273F6C84 /* DashSurfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DashSurfTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2747ED38E602433131F5632 /* DashSurfApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashSurfApp.swift; sourceTree = "<group>"; };
+		E3242BB1BB32AA7B73AE1B73 /* CarPlay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CarPlay.entitlements; sourceTree = "<group>"; };
+		E39B2B47975F0173ED6A5BFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E691776A8265078E70E41897 /* MediaDetectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaDetectionTests.swift; sourceTree = "<group>"; };
+		E71B2F0F1BD64C2C45E5C2B4 /* CarPlaySessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlaySessionManager.swift; sourceTree = "<group>"; };
+		F26FB3F7D2D341AE591D5576 /* BookmarkRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkRepository.swift; sourceTree = "<group>"; };
+		FFAFACFCA16D0E4883CE31B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,13 +152,89 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B9340614599AB78F485950C7 = {
+		1129B6A53940C88B539F2B2B /* DashSurf */ = {
 			isa = PBXGroup;
 			children = (
-				1129B6A53940C88B539F2B2B /* DashSurf */,
-				A0937472EE5878FA82CB0F7E /* DashSurfTests */,
-				547D009064F7C3F13BEF3460 /* Products */,
+				D1D0524B025E57AFFF263442 /* App */,
+				F2575EDE5A9FE10DC6BC790C /* Browser */,
+				3E9B5D07FBC4B6F3C0E178A4 /* CarPlay */,
+				E3242BB1BB32AA7B73AE1B73 /* CarPlay.entitlements */,
+				35D315DEBBF45F223B169A61 /* Core */,
+				9E12E56F4E0DF0437D329C59 /* DashSurf.entitlements */,
+				984D844B917CCD4C29DE2A97 /* Features */,
+				FFAFACFCA16D0E4883CE31B2 /* Info.plist */,
+				A1C86A29E589D48EC70B6A32 /* Models */,
+				60007F2925DEA5C892005D77 /* Persistence */,
+				887A6F90336FF23D95C3914B /* Resources */,
+				609874F33224C0C09F1FEE42 /* Services */,
+				C71E237AED0167A15E00637D /* UI */,
 			);
+			path = DashSurf;
+			sourceTree = "<group>";
+		};
+		2C3495591E10CB2A6AB17552 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				8207307E8B3200CC2DDA52F0 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		2C6B23BCC3481F95570A5D96 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				8225F26C541B875D1C9BFF3E /* HistoryView.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		35D315DEBBF45F223B169A61 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E113100640BCA94ED00A0A86 /* Constants */,
+				53979F7CDCF086A36FCA028A /* DI */,
+				4C156B6203753B4ABE8F7455 /* Extensions */,
+				E2C143F91D2FC58949FEBD62 /* Utilities */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		3E9B5D07FBC4B6F3C0E178A4 /* CarPlay */ = {
+			isa = PBXGroup;
+			children = (
+				1EB0D2349F01A8E065A8C530 /* CarMotionGate.swift */,
+				4E253642EAB9A39DA7983717 /* CarPlayAvailabilityService.swift */,
+				8DEB335E4365C30FF7B8A145 /* CarPlayBrowserViewController.swift */,
+				2D638A6B9E10C69ACD7A699E /* CarPlayCoordinator.swift */,
+				0788E3A6ECB2D96B2F71CEBB /* CarPlaySceneDelegate.swift */,
+				6338E16BF652ABCAF8F08F4E /* CarPlaySceneRole.swift */,
+				E71B2F0F1BD64C2C45E5C2B4 /* CarPlaySessionManager.swift */,
+			);
+			path = CarPlay;
+			sourceTree = "<group>";
+		};
+		4C156B6203753B4ABE8F7455 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8366138227E94FC7450F2DEB /* URL+DashSurf.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		50F986FC4EB6BC19D76D6B0A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6465263114726CF3C818B128 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		53979F7CDCF086A36FCA028A /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				DCA44F740C1F57A63B5FD494 /* AppDependencies.swift */,
+			);
+			path = DI;
 			sourceTree = "<group>";
 		};
 		547D009064F7C3F13BEF3460 /* Products */ = {
@@ -159,232 +246,68 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1129B6A53940C88B539F2B2B /* DashSurf */ = {
-			isa = PBXGroup;
-			children = (
-				D1D0524B025E57AFFF263442,
-				F2575EDE5A9FE10DC6BC790C,
-				3E9B5D07FBC4B6F3C0E178A4,
-				E3242BB1BB32AA7B73AE1B73,
-				35D315DEBBF45F223B169A61,
-				9E12E56F4E0DF0437D329C59,
-				984D844B917CCD4C29DE2A97,
-				FFAFACFCA16D0E4883CE31B2,
-				A1C86A29E589D48EC70B6A32,
-				60007F2925DEA5C892005D77,
-				887A6F90336FF23D95C3914B,
-				609874F33224C0C09F1FEE42,
-				C71E237AED0167A15E00637D,
-			);
-			path = DashSurf;
-			sourceTree = "<group>";
-		};
-		D1D0524B025E57AFFF263442 /* App */ = {
-			isa = PBXGroup;
-			children = (
-				A3092CFC56DFE830E2321EED,
-				E39B2B47975F0173ED6A5BFB,
-				E2747ED38E602433131F5632,
-				4E5043B8D3DEB43E98EE95E0,
-				37132F88E94CE13F16CB0CAD,
-			);
-			path = App;
-			sourceTree = "<group>";
-		};
-		F2575EDE5A9FE10DC6BC790C /* Browser */ = {
-			isa = PBXGroup;
-			children = (
-				6991F0980BE82CF80CEA6B8D,
-				1ACE99860399F0FA7781500F,
-				1D4CEC207445B3211AD3DF78,
-				3F634418690114D4BD1C93DF,
-				02EE3D97109959CADE0D87BB,
-				C968D747401188334A9E4265,
-				4744C2590E5EC1A859DF799E,
-			);
-			path = Browser;
-			sourceTree = "<group>";
-		};
-		3E9B5D07FBC4B6F3C0E178A4 /* CarPlay */ = {
-			isa = PBXGroup;
-			children = (
-				1EB0D2349F01A8E065A8C530,
-				4E253642EAB9A39DA7983717,
-				8DEB335E4365C30FF7B8A145,
-				2D638A6B9E10C69ACD7A699E,
-				0788E3A6ECB2D96B2F71CEBB,
-				6338E16BF652ABCAF8F08F4E,
-				E71B2F0F1BD64C2C45E5C2B4,
-			);
-			path = CarPlay;
-			sourceTree = "<group>";
-		};
-		35D315DEBBF45F223B169A61 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				E113100640BCA94ED00A0A86,
-				53979F7CDCF086A36FCA028A,
-				4C156B6203753B4ABE8F7455,
-				E2C143F91D2FC58949FEBD62,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		E113100640BCA94ED00A0A86 /* Constants */ = {
-			isa = PBXGroup;
-			children = (
-				A65E316178B5E92D67BF5088,
-			);
-			path = Constants;
-			sourceTree = "<group>";
-		};
-		53979F7CDCF086A36FCA028A /* DI */ = {
-			isa = PBXGroup;
-			children = (
-				DCA44F740C1F57A63B5FD494,
-			);
-			path = DI;
-			sourceTree = "<group>";
-		};
-		4C156B6203753B4ABE8F7455 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				8366138227E94FC7450F2DEB,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		E2C143F91D2FC58949FEBD62 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				D6B845FDBA9CAB276B6EA22C,
-			);
-			path = Utilities;
-			sourceTree = "<group>";
-		};
-		984D844B917CCD4C29DE2A97 /* Features */ = {
-			isa = PBXGroup;
-			children = (
-				AC154582CCA25ABC62395566,
-				2C6B23BCC3481F95570A5D96,
-				50F986FC4EB6BC19D76D6B0A,
-				60FAF8AE03BCAB030071C683,
-				C14C75F3AD87B28E564EAC26,
-				2C3495591E10CB2A6AB17552,
-			);
-			path = Features;
-			sourceTree = "<group>";
-		};
-		AC154582CCA25ABC62395566 /* Bookmarks */ = {
-			isa = PBXGroup;
-			children = (
-				02D55A28221684AF939F6223,
-			);
-			path = Bookmarks;
-			sourceTree = "<group>";
-		};
-		2C6B23BCC3481F95570A5D96 /* History */ = {
-			isa = PBXGroup;
-			children = (
-				8225F26C541B875D1C9BFF3E,
-			);
-			path = History;
-			sourceTree = "<group>";
-		};
-		50F986FC4EB6BC19D76D6B0A /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				6465263114726CF3C818B128,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		60FAF8AE03BCAB030071C683 /* QuickAccess */ = {
-			isa = PBXGroup;
-			children = (
-				11D8ABEDC66288FB18D21DFB,
-			);
-			path = QuickAccess;
-			sourceTree = "<group>";
-		};
-		C14C75F3AD87B28E564EAC26 /* RecentMedia */ = {
-			isa = PBXGroup;
-			children = (
-				5FB1958D53E180E8E03FFCF9,
-			);
-			path = RecentMedia;
-			sourceTree = "<group>";
-		};
-		2C3495591E10CB2A6AB17552 /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				8207307E8B3200CC2DDA52F0,
-			);
-			path = Settings;
-			sourceTree = "<group>";
-		};
-		A1C86A29E589D48EC70B6A32 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				B41950E99606F4EC4F81C30C,
-				C4C1681A4C0BAA6FE31A98F6,
-				90C296D6490B3FF1263207AE,
-				6FB09F1BF4E059EE46ADDDAF,
-				C86DC829A81AF686C0BA6C34,
-				B5BCB0121C76B568BDD7D495,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		60007F2925DEA5C892005D77 /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
-				F26FB3F7D2D341AE591D5576,
-				88BB727537109951C6D1AAC4,
-				405C66D9A9AAB8E8F31C3BDA,
-				6DDAF9F9BD2821F880ECA999,
-				0338ACBE6677E0F8111A98A9,
-				31CA1D21C3FAEAB771D22743,
+				F26FB3F7D2D341AE591D5576 /* BookmarkRepository.swift */,
+				88BB727537109951C6D1AAC4 /* HistoryRepository.swift */,
+				405C66D9A9AAB8E8F31C3BDA /* PersistenceController.swift */,
+				6DDAF9F9BD2821F880ECA999 /* QuickAccessRepository.swift */,
+				0338ACBE6677E0F8111A98A9 /* RecentMediaRepository.swift */,
+				31CA1D21C3FAEAB771D22743 /* TabStateRepository.swift */,
 			);
 			path = Persistence;
-			sourceTree = "<group>";
-		};
-		887A6F90336FF23D95C3914B /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				C0E24501C1F68BB214B16049,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		609874F33224C0C09F1FEE42 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				75AE4EF8D6185E1D2351C449,
-				515F64E6A014B4EAE8A0749C,
-				00E95567125B48B8550AC913,
-				7C55A18C4C3BC2FC33E45313,
-				B77E73A977D4D20DAE627D51,
-				0D1C7387562F220D4886847F,
-				0DA67F70040C56D172C9915C,
+				75AE4EF8D6185E1D2351C449 /* AudioSessionService.swift */,
+				515F64E6A014B4EAE8A0749C /* FaviconService.swift */,
+				00E95567125B48B8550AC913 /* MediaDetectionService.swift */,
+				7C55A18C4C3BC2FC33E45313 /* SearchService.swift */,
+				B77E73A977D4D20DAE627D51 /* SettingsStore.swift */,
+				0D1C7387562F220D4886847F /* URLService.swift */,
+				0DA67F70040C56D172C9915C /* WebsiteDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
 		};
-		C71E237AED0167A15E00637D /* UI */ = {
+		60FAF8AE03BCAB030071C683 /* QuickAccess */ = {
 			isa = PBXGroup;
 			children = (
-				8D1745749EB04F9558F1E347,
+				11D8ABEDC66288FB18D21DFB /* QuickAccessEditorView.swift */,
 			);
-			path = UI;
+			path = QuickAccess;
+			sourceTree = "<group>";
+		};
+		887A6F90336FF23D95C3914B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C0E24501C1F68BB214B16049 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		8D1745749EB04F9558F1E347 /* Theme */ = {
 			isa = PBXGroup;
 			children = (
-				9B1D830312EED198DF2A8B99,
+				9B1D830312EED198DF2A8B99 /* DashSurfTheme.swift */,
 			);
 			path = Theme;
+			sourceTree = "<group>";
+		};
+		984D844B917CCD4C29DE2A97 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				AC154582CCA25ABC62395566 /* Bookmarks */,
+				2C6B23BCC3481F95570A5D96 /* History */,
+				50F986FC4EB6BC19D76D6B0A /* Home */,
+				60FAF8AE03BCAB030071C683 /* QuickAccess */,
+				C14C75F3AD87B28E564EAC26 /* RecentMedia */,
+				2C3495591E10CB2A6AB17552 /* Settings */,
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 		A0937472EE5878FA82CB0F7E /* DashSurfTests */ = {
@@ -401,26 +324,97 @@
 			path = DashSurfTests;
 			sourceTree = "<group>";
 		};
+		A1C86A29E589D48EC70B6A32 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B41950E99606F4EC4F81C30C /* AppSettings.swift */,
+				C4C1681A4C0BAA6FE31A98F6 /* Bookmark.swift */,
+				90C296D6490B3FF1263207AE /* BrowserHistoryItem.swift */,
+				6FB09F1BF4E059EE46ADDDAF /* BrowserTab.swift */,
+				C86DC829A81AF686C0BA6C34 /* QuickAccessItem.swift */,
+				B5BCB0121C76B568BDD7D495 /* RecentMediaItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AC154582CCA25ABC62395566 /* Bookmarks */ = {
+			isa = PBXGroup;
+			children = (
+				02D55A28221684AF939F6223 /* BookmarksView.swift */,
+			);
+			path = Bookmarks;
+			sourceTree = "<group>";
+		};
+		B9340614599AB78F485950C7 = {
+			isa = PBXGroup;
+			children = (
+				1129B6A53940C88B539F2B2B /* DashSurf */,
+				A0937472EE5878FA82CB0F7E /* DashSurfTests */,
+				547D009064F7C3F13BEF3460 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C14C75F3AD87B28E564EAC26 /* RecentMedia */ = {
+			isa = PBXGroup;
+			children = (
+				5FB1958D53E180E8E03FFCF9 /* RecentMediaView.swift */,
+			);
+			path = RecentMedia;
+			sourceTree = "<group>";
+		};
+		C71E237AED0167A15E00637D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8D1745749EB04F9558F1E347 /* Theme */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D1D0524B025E57AFFF263442 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A3092CFC56DFE830E2321EED /* AppCoordinator.swift */,
+				E39B2B47975F0173ED6A5BFB /* AppDelegate.swift */,
+				E2747ED38E602433131F5632 /* DashSurfApp.swift */,
+				4E5043B8D3DEB43E98EE95E0 /* PhoneSceneDelegate.swift */,
+				37132F88E94CE13F16CB0CAD /* RootTabView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E113100640BCA94ED00A0A86 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A65E316178B5E92D67BF5088 /* AppConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		E2C143F91D2FC58949FEBD62 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D6B845FDBA9CAB276B6EA22C /* DateGrouping.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F2575EDE5A9FE10DC6BC790C /* Browser */ = {
+			isa = PBXGroup;
+			children = (
+				6991F0980BE82CF80CEA6B8D /* BrowserChrome.swift */,
+				1ACE99860399F0FA7781500F /* BrowserSessionManager.swift */,
+				1D4CEC207445B3211AD3DF78 /* BrowserView.swift */,
+				3F634418690114D4BD1C93DF /* BrowserViewModel.swift */,
+				02EE3D97109959CADE0D87BB /* TabManager.swift */,
+				C968D747401188334A9E4265 /* WebViewFactory.swift */,
+				4744C2590E5EC1A859DF799E /* WebViewRepresentable.swift */,
+			);
+			path = Browser;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E3435DDA2687639586BF0B70 /* DashSurf */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5A270A713FF5EC9FCD22D23C /* Build configuration list for PBXNativeTarget "DashSurf" */;
-			buildPhases = (
-				EF596FBB90AC90528023F194 /* Sources */,
-				4F6F5CC3FCCF73F75AE9CCF4 /* Frameworks */,
-				E8543F1CDED26524254ECEB6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = DashSurf;
-			productName = DashSurf;
-			productReference = 84337AD8D27FCD69AF2C4FC2 /* DashSurf.app */;
-			productType = "com.apple.product-type.application";
-		};
 		A700229C3AC2DAE057FE5B27 /* DashSurfTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48CBEB1D3FD36E7873FF2C6A /* Build configuration list for PBXNativeTarget "DashSurfTests" */;
@@ -438,6 +432,23 @@
 			productReference = DFDED23FA58339F9273F6C84 /* DashSurfTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		E3435DDA2687639586BF0B70 /* DashSurf */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A270A713FF5EC9FCD22D23C /* Build configuration list for PBXNativeTarget "DashSurf" */;
+			buildPhases = (
+				EF596FBB90AC90528023F194 /* Sources */,
+				4F6F5CC3FCCF73F75AE9CCF4 /* Frameworks */,
+				E8543F1CDED26524254ECEB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DashSurf;
+			productName = DashSurf;
+			productReference = 84337AD8D27FCD69AF2C4FC2 /* DashSurf.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -448,12 +459,12 @@
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
-					E3435DDA2687639586BF0B70 = {
-						CreatedOnToolsVersion = 16.0;
-					};
 					A700229C3AC2DAE057FE5B27 = {
 						CreatedOnToolsVersion = 16.0;
 						TestTargetID = E3435DDA2687639586BF0B70;
+					};
+					E3435DDA2687639586BF0B70 = {
+						CreatedOnToolsVersion = 16.0;
 					};
 				};
 			};
@@ -488,6 +499,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BCBA3B9FB34288CD58766FB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4078C453164579A83816F4A /* BookmarkRepositoryTests.swift in Sources */,
+				B11B4139EDBF615916C287E4 /* HistoryRepositoryTests.swift in Sources */,
+				DDBDB59CDBC54D53F6D23366 /* MediaDetectionTests.swift in Sources */,
+				25A856DE9B58D86E134D6597 /* RecentMediaRepositoryTests.swift in Sources */,
+				3CAAC2118F596A17E8BD241B /* SettingsStoreTests.swift in Sources */,
+				88ABED1AAD100DBD7471D000 /* TabManagerTests.swift in Sources */,
+				DEE074AC23927FC65B7022E3 /* URLServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EF596FBB90AC90528023F194 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -544,47 +569,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BCBA3B9FB34288CD58766FB2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F4078C453164579A83816F4A /* BookmarkRepositoryTests.swift in Sources */,
-				B11B4139EDBF615916C287E4 /* HistoryRepositoryTests.swift in Sources */,
-				DDBDB59CDBC54D53F6D23366 /* MediaDetectionTests.swift in Sources */,
-				25A856DE9B58D86E134D6597 /* RecentMediaRepositoryTests.swift in Sources */,
-				3CAAC2118F596A17E8BD241B /* SettingsStoreTests.swift in Sources */,
-				88ABED1AAD100DBD7471D000 /* TabManagerTests.swift in Sources */,
-				DEE074AC23927FC65B7022E3 /* URLServiceTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin XCBuildConfiguration section */
-		DCFB30EAE59D6917CE906371 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_DYNAMIC_NO_PIC = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-			};
-			name = Debug;
+/* Begin PBXTargetDependency section */
+		5A0AB56B64A077C4F9DAD608 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3435DDA2687639586BF0B70 /* DashSurf */;
+			targetProxy = 193D0A8035DE97CF1A3652FD /* PBXContainerItemProxy */;
 		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
 		37CDDD61FED8A39EEA88C0F9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -599,69 +594,9 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		91B8F6FB95707A0AB87A87F1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = DashSurf/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = DashSurf;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.dashsurf;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				CODE_SIGN_ENTITLEMENTS = DashSurf/DashSurf.entitlements;
-			};
-			name = Debug;
-		};
-		BB071F776B40F4837F61A6A3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = DashSurf/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = DashSurf;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.dashsurf;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				CODE_SIGN_ENTITLEMENTS = DashSurf/DashSurf.entitlements;
 			};
 			name = Release;
 		};
@@ -671,10 +606,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5T35H63YR2;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.dashsurf.tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joannadutka.dashsurf.tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -688,16 +624,101 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5T35H63YR2;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.dashsurf.tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joannadutka.dashsurf.tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DashSurf.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DashSurf";
 			};
 			name = Release;
+		};
+		91B8F6FB95707A0AB87A87F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DashSurf/DashSurf.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5T35H63YR2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DashSurf/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DashSurf;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joannadutka.dashsurf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB071F776B40F4837F61A6A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DashSurf/DashSurf.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5T35H63YR2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DashSurf/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DashSurf;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joannadutka.dashsurf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DCFB30EAE59D6917CE906371 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -711,15 +732,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5A270A713FF5EC9FCD22D23C /* Build configuration list for PBXNativeTarget "DashSurf" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				91B8F6FB95707A0AB87A87F1 /* Debug */,
-				BB071F776B40F4837F61A6A3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		48CBEB1D3FD36E7873FF2C6A /* Build configuration list for PBXNativeTarget "DashSurfTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -729,25 +741,16 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		5A270A713FF5EC9FCD22D23C /* Build configuration list for PBXNativeTarget "DashSurf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91B8F6FB95707A0AB87A87F1 /* Debug */,
+				BB071F776B40F4837F61A6A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
-
-/* Begin PBXTargetDependency section */
-		5A0AB56B64A077C4F9DAD608 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E3435DDA2687639586BF0B70 /* DashSurf */;
-			targetProxy = 193D0A8035DE97CF1A3652FD /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXContainerItemProxy section */
-		193D0A8035DE97CF1A3652FD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E3435DDA2687639586BF0B70;
-			remoteInfo = DashSurf;
-		};
-/* End PBXContainerItemProxy section */
 	};
 	rootObject = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
 }

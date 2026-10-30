@@ -20,7 +20,7 @@ final class HistoryRepository {
 
         var descriptor = FetchDescriptor<BrowserHistoryItem>(
             predicate: #Predicate { $0.urlString == urlString },
-            sortBy: [SortDescriptor(\.lastVisitedAt, order: .reverse)]
+            sortBy: [SortDescriptor(\BrowserHistoryItem.lastVisitedAt, order: .reverse)]
         )
         descriptor.fetchLimit = 1
         if let existing = try modelContext.fetch(descriptor).first {
@@ -50,7 +50,7 @@ final class HistoryRepository {
     func search(query: String, limit: Int = 200) throws -> [BrowserHistoryItem] {
         let q = query.trimmingCharacters(in: .whitespacesAndNewlines)
         var descriptor = FetchDescriptor<BrowserHistoryItem>(
-            sortBy: [SortDescriptor(\.lastVisitedAt, order: .reverse)]
+            sortBy: [SortDescriptor(\BrowserHistoryItem.lastVisitedAt, order: .reverse)]
         )
         descriptor.fetchLimit = limit
         let all = try modelContext.fetch(descriptor)
@@ -65,7 +65,7 @@ final class HistoryRepository {
 
     func recent(limit: Int = 20) throws -> [BrowserHistoryItem] {
         var descriptor = FetchDescriptor<BrowserHistoryItem>(
-            sortBy: [SortDescriptor(\.lastVisitedAt, order: .reverse)]
+            sortBy: [SortDescriptor(\BrowserHistoryItem.lastVisitedAt, order: .reverse)]
         )
         descriptor.fetchLimit = limit
         return try modelContext.fetch(descriptor)
@@ -75,7 +75,7 @@ final class HistoryRepository {
         let d = domain.lowercased()
         let descriptor = FetchDescriptor<BrowserHistoryItem>(
             predicate: #Predicate { $0.domain == d },
-            sortBy: [SortDescriptor(\.lastVisitedAt, order: .reverse)]
+            sortBy: [SortDescriptor(\BrowserHistoryItem.lastVisitedAt, order: .reverse)]
         )
         return try modelContext.fetch(descriptor)
     }

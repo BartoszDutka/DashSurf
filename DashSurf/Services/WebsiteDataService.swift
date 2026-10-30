@@ -2,6 +2,7 @@ import Foundation
 import WebKit
 
 /// Owns the persistent website data store used by all DashSurf WKWebViews.
+@MainActor
 final class WebsiteDataService {
     /// Critical: use the default persistent store so cookies / localStorage survive relaunches.
     let dataStore: WKWebsiteDataStore = .default()

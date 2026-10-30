@@ -13,18 +13,23 @@ final class BookmarkRepository {
         var descriptor = FetchDescriptor<Bookmark>()
         if sorted {
             descriptor.sortBy = [
-                SortDescriptor(\.isFavorite, order: .reverse),
-                SortDescriptor(\.sortOrder),
-                SortDescriptor(\.createdAt, order: .reverse)
+                SortDescriptor(\Bookmark.sortOrder),
+                SortDescriptor(\Bookmark.createdAt, order: .reverse)
             ]
         }
-        return try modelContext.fetch(descriptor)
+        let items = try modelContext.fetch(descriptor)
+        guard sorted else { return items }
+        return items.sorted {
+            if $0.isFavorite != $1.isFavorite { return $0.isFavorite && !$1.isFavorite }
+            if $0.sortOrder != $1.sortOrder { return $0.sortOrder < $1.sortOrder }
+            return $0.createdAt > $1.createdAt
+        }
     }
 
     func favorites() throws -> [Bookmark] {
         let descriptor = FetchDescriptor<Bookmark>(
             predicate: #Predicate { $0.isFavorite == true },
-            sortBy: [SortDescriptor(\.sortOrder)]
+            sortBy: [SortDescriptor(\Bookmark.sortOrder)]
         )
         return try modelContext.fetch(descriptor)
     }
@@ -40,7 +45,7 @@ final class BookmarkRepository {
 
     func folders() throws -> [BookmarkFolder] {
         let descriptor = FetchDescriptor<BookmarkFolder>(
-            sortBy: [SortDescriptor(\.sortOrder)]
+            sortBy: [SortDescriptor(\BookmarkFolder.sortOrder)]
         )
         return try modelContext.fetch(descriptor)
     }

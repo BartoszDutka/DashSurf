@@ -11,7 +11,7 @@ final class RecentMediaRepository {
 
     func recent(limit: Int = 30) throws -> [RecentMediaItem] {
         var descriptor = FetchDescriptor<RecentMediaItem>(
-            sortBy: [SortDescriptor(\.lastOpenedAt, order: .reverse)]
+            sortBy: [SortDescriptor(\RecentMediaItem.lastOpenedAt, order: .reverse)]
         )
         descriptor.fetchLimit = limit
         return try modelContext.fetch(descriptor)
@@ -20,7 +20,7 @@ final class RecentMediaRepository {
     func favorites() throws -> [RecentMediaItem] {
         let descriptor = FetchDescriptor<RecentMediaItem>(
             predicate: #Predicate { $0.isFavorite == true },
-            sortBy: [SortDescriptor(\.lastOpenedAt, order: .reverse)]
+            sortBy: [SortDescriptor(\RecentMediaItem.lastOpenedAt, order: .reverse)]
         )
         return try modelContext.fetch(descriptor)
     }

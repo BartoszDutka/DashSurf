@@ -11,7 +11,7 @@ final class TabStateRepository {
 
     func load() throws -> [BrowserTab] {
         let descriptor = FetchDescriptor<BrowserTabRecord>(
-            sortBy: [SortDescriptor(\.sortOrder)]
+            sortBy: [SortDescriptor(\BrowserTabRecord.sortOrder)]
         )
         return try modelContext.fetch(descriptor).map { record in
             BrowserTab(
