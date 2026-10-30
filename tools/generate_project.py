@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import hashlib
 import os
+import re
 import uuid
 from pathlib import Path
 
@@ -25,6 +26,18 @@ PBX_TYPES = {
 def uid(seed: str) -> str:
     h = hashlib.md5(seed.encode()).hexdigest().upper()
     return h[:24]
+
+
+def pbx_string(value: str) -> str:
+    """Quote values Xcode's project parser will not accept unquoted.
+
+    Unquoted tokens may contain letters, digits, and ._/- . A '+' (as in
+    URL+DashSurf.swift) is a parse error and the project will not open.
+    """
+    if re.fullmatch(r"[A-Za-z0-9._/-]+", value):
+        return value
+    escaped = value.replace("\\", "\\\\").replace('"', '\\"')
+    return f'"{escaped}"'
 
 
 def collect_files(base: Path) -> list[Path]:
@@ -85,6 +98,8 @@ def main() -> None:
     cfg_app_release = uid("cfg:app:release")
     cfg_tests_debug = uid("cfg:tests:debug")
     cfg_tests_release = uid("cfg:tests:release")
+    dependency = uid("dependency:tests")
+    proxy = uid("proxy:tests")
 
     # Build nested groups mirroring folders under DashSurf/
     groups: dict[str, str] = {"": group_src}
@@ -170,7 +185,7 @@ def main() -> None:
         rel_path = path.relative_to(ROOT).as_posix()
         # Use path relative to group; store full relative for simplicity via name only in groups
         a(
-            f"\t\t{file_refs[path]} /* {path.name} */ = {{isa = PBXFileReference; lastKnownFileType = {last}; path = {path.name}; sourceTree = \"<group>\"; }};"
+            f"\t\t{file_refs[path]} /* {path.name} */ = {{isa = PBXFileReference; lastKnownFileType = {last}; path = {pbx_string(path.name)}; sourceTree = \"<group>\"; }};"
         )
     a("/* End PBXFileReference section */")
     a("")
@@ -317,6 +332,7 @@ def main() -> None:
     a("\t\t\tbuildRules = (")
     a("\t\t\t);")
     a("\t\t\tdependencies = (")
+    a(f"\t\t\t\t{dependency} /* PBXTargetDependency */,")
     a("\t\t\t);")
     a("\t\t\tname = DashSurfTests;")
     a("\t\t\tproductName = DashSurfTests;")
@@ -527,6 +543,24 @@ def main() -> None:
     a('\t\t\tdefaultConfigurationName = Release;')
     a("\t\t};")
     a("/* End XCConfigurationList section */")
+    a("")
+    a("/* Begin PBXTargetDependency section */")
+    a(f"\t\t{dependency} /* PBXTargetDependency */ = {{")
+    a("\t\t\tisa = PBXTargetDependency;")
+    a(f"\t\t\ttarget = {target_app} /* DashSurf */;")
+    a(f"\t\t\ttargetProxy = {proxy} /* PBXContainerItemProxy */;")
+    a("\t\t};")
+    a("/* End PBXTargetDependency section */")
+    a("")
+    a("/* Begin PBXContainerItemProxy section */")
+    a(f"\t\t{proxy} /* PBXContainerItemProxy */ = {{")
+    a("\t\t\tisa = PBXContainerItemProxy;")
+    a(f"\t\t\tcontainerPortal = {project_id} /* Project object */;")
+    a("\t\t\tproxyType = 1;")
+    a(f"\t\t\tremoteGlobalIDString = {target_app};")
+    a("\t\t\tremoteInfo = DashSurf;")
+    a("\t\t};")
+    a("/* End PBXContainerItemProxy section */")
     a("\t};")
     a(f"\trootObject = {project_id} /* Project object */;")
     a("}")
